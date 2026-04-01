@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英傑大戦 デッキビューア</title>
+  <style>
+    :root {
+      --bg: #1a1a2e;
+      --card-bg: #16213e;
+      --accent: #e94560;
+      --text: #eee;
+      --text-muted: #999;
+      --border: #333;
+      --faction-ao: #3060a0;
+      --faction-hi: #b41919;
+      --faction-heki: #007332;
+      --faction-gen: #636261;
+      --faction-shi: #8c0078;
+      --faction-ko: #ff7800;
+      --faction-ki: #cccc00;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', 'Yu Gothic', sans-serif; background: var(--bg); color: var(--text); }
+
+    header {
+      background: linear-gradient(135deg, #0f3460, #16213e);
+      padding: 1rem 2rem;
+      border-bottom: 2px solid var(--accent);
+    }
+    header h1 { font-size: 1.5rem; }
+    header h1 span { color: var(--accent); }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+
+    /* Stats bar */
+    .stats {
+      display: flex; gap: 1.5rem; padding: 1rem 0;
+      flex-wrap: wrap; border-bottom: 1px solid var(--border); margin-bottom: 1rem;
+    }
+    .stat-item { text-align: center; }
+    .stat-value { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+    .stat-label { font-size: 0.75rem; color: var(--text-muted); }
+
+    /* Search */
+    .search-bar {
+      display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;
+    }
+    .search-bar input, .search-bar select {
+      padding: 0.5rem; border: 1px solid var(--border);
+      background: var(--card-bg); color: var(--text);
+      border-radius: 4px; font-size: 0.9rem;
+    }
+    .search-bar input { flex: 1; min-width: 200px; }
+    .search-bar select { min-width: 120px; }
+
+    /* Battle cards */
+    .battle-list { display: flex; flex-direction: column; gap: 0.75rem; }
+    .battle-card {
+      background: var(--card-bg); border-radius: 8px;
+      padding: 1rem; border-left: 4px solid var(--border);
+      cursor: pointer; transition: transform 0.1s;
+    }
+    .battle-card:hover { transform: translateX(4px); }
+    .battle-card.win { border-left-color: #4caf50; }
+    .battle-card.lose { border-left-color: #f44336; }
+
+    .battle-header {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 0.5rem; font-size: 0.8rem; color: var(--text-muted);
+    }
+    .battle-result {
+      font-weight: bold; padding: 2px 8px; border-radius: 4px;
+      font-size: 0.75rem;
+    }
+    .battle-result.win { background: #4caf50; color: #fff; }
+    .battle-result.lose { background: #f44336; color: #fff; }
+    .battle-result.unknown { background: #666; color: #fff; }
+
+    .deck-row {
+      display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.25rem 0;
+    }
+    .deck-label {
+      font-size: 0.7rem; color: var(--text-muted);
+      min-width: 30px; padding-top: 4px;
+    }
+    .card-chip {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px 8px; border-radius: 4px;
+      font-size: 0.8rem; font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.15);
+      cursor: pointer; position: relative;
+    }
+    .card-chip:hover .card-tooltip {
+      display: block;
+    }
+    .card-avatar {
+      width: 20px; height: 20px; border-radius: 50%;
+      object-fit: cover; vertical-align: middle;
+    }
+    .card-cost {
+      font-size: 0.65rem; opacity: 0.7;
+    }
+    .card-tooltip {
+      display: none; position: absolute; bottom: 110%; left: 50%;
+      transform: translateX(-50%); z-index: 100;
+      background: #111; border: 1px solid #555; border-radius: 6px;
+      padding: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .card-tooltip img {
+      width: 120px; height: auto; border-radius: 4px;
+    }
+    .deck-total {
+      font-size: 0.7rem; color: var(--text-muted); margin-left: auto;
+      align-self: center;
+    }
+
+    /* Frame screenshot */
+    .frame-toggle {
+      font-size: 0.7rem; color: var(--accent); cursor: pointer;
+      margin-top: 0.5rem; display: inline-block;
+    }
+    .frame-toggle:hover { text-decoration: underline; }
+    .frame-img-container { display: none; margin-top: 0.5rem; }
+    .frame-img-container.open { display: block; }
+    .frame-img-container img {
+      width: 100%; max-width: 640px; border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    /* Faction colors */
+    .faction-蒼 { background: var(--faction-ao); }
+    .faction-緋 { background: var(--faction-hi); }
+    .faction-碧 { background: var(--faction-heki); }
+    .faction-玄 { background: var(--faction-gen); }
+    .faction-紫 { background: var(--faction-shi); }
+    .faction-琥 { background: var(--faction-ko); }
+    .faction-黄 { background: var(--faction-ki); color: #333; }
+    .faction-unknown { background: #444; }
+
+    .yt-link {
+      color: var(--accent); text-decoration: none; font-size: 0.75rem;
+    }
+    .yt-link:hover { text-decoration: underline; }
+
+    .no-results {
+      text-align: center; padding: 3rem; color: var(--text-muted);
+    }
+
+    /* Pagination */
+    .pagination {
+      display: flex; justify-content: center; gap: 0.5rem;
+      margin-top: 1rem; padding: 1rem 0;
+    }
+    .pagination button {
+      padding: 0.4rem 0.8rem; background: var(--card-bg);
+      border: 1px solid var(--border); color: var(--text);
+      border-radius: 4px; cursor: pointer;
+    }
+    .pagination button.active { background: var(--accent); border-color: var(--accent); }
+    .pagination button:hover { background: #333; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>英傑大戦</span> デッキビューア</h1>
+  </header>
+
+  <div class="container">
+    <div class="stats" id="stats"></div>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="カード名で検索..." />
+      <select id="factionFilter">
+        <option value="">全勢力</option>
+        <option value="蒼">蒼</option>
+        <option value="緋">緋</option>
+        <option value="碧">碧</option>
+        <option value="玄">玄</option>
+        <option value="紫">紫</option>
+        <option value="琥">琥</option>
+        <option value="黄">黄</option>
+      </select>
+      <select id="resultFilter">
+        <option value="">全結果</option>
+        <option value="勝利">勝利</option>
+        <option value="敗北">敗北</option>
+      </select>
+      <button id="toggleFrames" onclick="toggleAllFrames()" style="padding:0.5rem 1rem;border:1px solid var(--border);background:var(--card-bg);color:var(--accent);border-radius:4px;cursor:pointer;font-size:0.85rem;">📷 画像一括表示</button>
+    </div>
+
+    <div class="battle-list" id="battleList"></div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <script>
+    let allData = { battles: [], videos: [], channels: [] };
+    let cardMaster = {};  // name -> {image_url, avatar_url, ...}
+    let filteredBattles = [];
+    let currentPage = 1;
+    const PER_PAGE = 20;
+
+    async function loadData() {
+      try {
+        const [battleRes, masterRes] = await Promise.all([
+          fetch('./data/battles.json'),
+          fetch('./data/card_master.json'),
+        ]);
+        allData = await battleRes.json();
+        const masterList = await masterRes.json();
+        // カード名 → マスタ情報のマップを構築
+        masterList.forEach(c => {
+          if (!cardMaster[c.name]) cardMaster[c.name] = c;
+        });
+        filteredBattles = allData.battles;
+        renderStats();
+        renderBattles();
+      } catch (e) {
+        document.getElementById('battleList').innerHTML =
+          '<div class="no-results">データの読み込みに失敗しました</div>';
+      }
+    }
+
+    function getCardImage(name) {
+      const c = cardMaster[name];
+      return c ? c.image_url : '';
+    }
+    function getCardAvatar(name) {
+      const c = cardMaster[name];
+      return c ? c.avatar_url : '';
+    }
+
+    function getVideo(videoId) {
+      return allData.videos.find(v => v.id === videoId) || {};
+    }
+
+    function formatTime(seconds) {
+      if (!seconds) return '';
+      const h = Math.floor(seconds / 3600);
+      const m = Math.floor((seconds % 3600) / 60);
+      const s = Math.floor(seconds % 60);
+      return h > 0 ? `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`
+                    : `${m}:${String(s).padStart(2,'0')}`;
+    }
+
+    function renderStats() {
+      const stats = document.getElementById('stats');
+      const totalBattles = allData.battles.length;
+      const wins = allData.battles.filter(b => b.result === '勝利').length;
+      const losses = allData.battles.filter(b => b.result === '敗北').length;
+
+      // カード使用頻度（相手デッキ=P2のみ集計）
+      const cardCount = {};
+      allData.battles.forEach(b => {
+        b.player2.forEach(c => {
+          cardCount[c.name] = (cardCount[c.name] || 0) + 1;
+        });
+      });
+      const topCard = Object.entries(cardCount).sort((a,b) => b[1]-a[1])[0];
+
+      stats.innerHTML = `
+        <div class="stat-item"><div class="stat-value">${totalBattles}</div><div class="stat-label">総バトル数</div></div>
+        <div class="stat-item"><div class="stat-value">${wins}</div><div class="stat-label">勝利</div></div>
+        <div class="stat-item"><div class="stat-value">${losses}</div><div class="stat-label">敗北</div></div>
+        <div class="stat-item"><div class="stat-value">${allData.videos.length}</div><div class="stat-label">動画数</div></div>
+        <div class="stat-item"><div class="stat-value">${topCard ? topCard[0] : '-'}</div><div class="stat-label">対戦相手 最多カード</div></div>
+      `;
+    }
+
+    function renderBattles() {
+      const list = document.getElementById('battleList');
+      const start = (currentPage - 1) * PER_PAGE;
+      const page = filteredBattles.slice(start, start + PER_PAGE);
+
+      if (page.length === 0) {
+        list.innerHTML = '<div class="no-results">該当するバトルがありません</div>';
+        document.getElementById('pagination').innerHTML = '';
+        return;
+      }
+
+      list.innerHTML = page.map(b => {
+        const video = getVideo(b.video_id);
+        const resultClass = b.result === '勝利' ? 'win' : b.result === '敗北' ? 'lose' : '';
+        const resultLabel = b.result === '勝利' ? 'win' : b.result === '敗北' ? 'lose' : 'unknown';
+        const ytUrl = video.youtube_id
+          ? `https://www.youtube.com/watch?v=${video.youtube_id}&t=${Math.floor(b.frame_timestamp)}s`
+          : '#';
+
+        const p1Total = b.player1.reduce((s,c) => s + (c.cost||0), 0);
+        const p2Total = b.player2.reduce((s,c) => s + (c.cost||0), 0);
+
+        return `
+          <div class="battle-card ${resultClass}">
+            <div class="battle-header">
+              <span>${video.title || 'Unknown'} @ ${formatTime(b.frame_timestamp)}</span>
+              <span>
+                <span class="battle-result ${resultLabel}">${b.result || '不明'}</span>
+                <a class="yt-link" href="${ytUrl}" target="_blank">YouTube ▶</a>
+              </span>
+            </div>
+            <div class="deck-row">
+              <span class="deck-label">P1</span>
+              ${b.player1.map(c => `<span class="card-chip faction-${c.faction||'unknown'}"><img class="card-avatar" src="${getCardAvatar(c.name)}" onerror="this.style.display='none'" />${c.name} <span class="card-cost">${c.cost||'?'}</span>${getCardImage(c.name) ? `<div class="card-tooltip"><img src="${getCardImage(c.name)}" /></div>` : ''}</span>`).join('')}
+              <span class="deck-total">${p1Total}c</span>
+            </div>
+            <div class="deck-row">
+              <span class="deck-label">P2</span>
+              ${b.player2.map(c => `<span class="card-chip faction-${c.faction||'unknown'}"><img class="card-avatar" src="${getCardAvatar(c.name)}" onerror="this.style.display='none'" />${c.name} <span class="card-cost">${c.cost||'?'}</span>${getCardImage(c.name) ? `<div class="card-tooltip"><img src="${getCardImage(c.name)}" /></div>` : ''}</span>`).join('')}
+              <span class="deck-total">${p2Total}c</span>
+            </div>
+            ${b.frame_image ? `
+            <span class="frame-toggle" onclick="this.nextElementSibling.classList.toggle('open')">📷 デッキ画面を表示</span>
+            <div class="frame-img-container">
+              <img src="data/${b.frame_image}" loading="lazy" alt="デッキ選択画面" />
+            </div>
+            ` : ''}
+          </div>
+        `;
+      }).join('');
+
+      renderPagination();
+    }
+
+    function renderPagination() {
+      const totalPages = Math.ceil(filteredBattles.length / PER_PAGE);
+      if (totalPages <= 1) { document.getElementById('pagination').innerHTML = ''; return; }
+
+      const pag = document.getElementById('pagination');
+      let html = '';
+      for (let i = 1; i <= totalPages; i++) {
+        html += `<button class="${i===currentPage?'active':''}" onclick="goPage(${i})">${i}</button>`;
+      }
+      pag.innerHTML = html;
+    }
+
+    function goPage(p) { currentPage = p; renderBattles(); window.scrollTo(0,0); }
+
+    let framesVisible = false;
+    function toggleAllFrames() {
+      framesVisible = !framesVisible;
+      document.querySelectorAll('.frame-img-container').forEach(el => {
+        el.classList.toggle('open', framesVisible);
+      });
+      document.getElementById('toggleFrames').textContent = framesVisible ? '📷 画像一括非表示' : '📷 画像一括表示';
+    }
+
+    function applyFilters() {
+      const search = document.getElementById('searchInput').value.trim().toLowerCase();
+      const faction = document.getElementById('factionFilter').value;
+      const result = document.getElementById('resultFilter').value;
+
+      filteredBattles = allData.battles.filter(b => {
+        const allCards = [...b.player1, ...b.player2];
+        if (search && !allCards.some(c => c.name.toLowerCase().includes(search))) return false;
+        if (faction && !allCards.some(c => c.faction === faction)) return false;
+        if (result && b.result !== result) return false;
+        return true;
+      });
+
+      currentPage = 1;
+      renderBattles();
+    }
+
+    document.getElementById('searchInput').addEventListener('input', applyFilters);
+    document.getElementById('factionFilter').addEventListener('change', applyFilters);
+    document.getElementById('resultFilter').addEventListener('change', applyFilters);
+
+    loadData();
+  </script>
+</body>
+</html>

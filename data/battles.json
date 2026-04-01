@@ -1,0 +1,2469 @@
+{
+  "channels": [
+    {
+      "id": 3,
+      "channel_id": "slotaoi",
+      "name": "仁義なき青井"
+    },
+    {
+      "id": 4,
+      "channel_id": "あらくれ一鉄",
+      "name": "あらくれ一鉄"
+    },
+    {
+      "id": 5,
+      "channel_id": "koto_torato",
+      "name": "虎斗"
+    },
+    {
+      "id": 6,
+      "channel_id": "はやて軍団1",
+      "name": "はやて軍団1"
+    },
+    {
+      "id": 7,
+      "channel_id": "レイソ",
+      "name": "レイソ*"
+    },
+    {
+      "id": 8,
+      "channel_id": "羽衣狐あっと京おんぷ",
+      "name": "羽衣狐あっと京おんぷ"
+    },
+    {
+      "id": 9,
+      "channel_id": "UCPgc3xsEN3sUNGn4yeVserQ",
+      "name": "UCPgc3xsEN3sUNGn4yeVserQ"
+    }
+  ],
+  "videos": [
+    {
+      "id": 4,
+      "youtube_id": "x58jA_Ektec",
+      "title": "【英傑大戦】世界一落ち着いてる配信ですわ【心の乱れは騎馬の乱れ】",
+      "channel_id": 6,
+      "published_at": "2026-03-31T00:00:00"
+    },
+    {
+      "id": 5,
+      "youtube_id": "OL6FSwIBaYM",
+      "title": "【英傑大戦】エチケット式尊氏皇甫嵩【レイソ】",
+      "channel_id": 7,
+      "published_at": "2026-03-31T00:00:00"
+    },
+    {
+      "id": 6,
+      "youtube_id": "fhqGJK2-apk",
+      "title": "【英傑大戦:全国対戦】３月　おわるってよ。 (26/3/31)【きつね配信1224】",
+      "channel_id": 8,
+      "published_at": "2026-03-31T00:00:00"
+    },
+    {
+      "id": 1,
+      "youtube_id": "YurBlaeAhs0",
+      "title": "Manual: YurBlaeAhs0",
+      "channel_id": null,
+      "published_at": null
+    },
+    {
+      "id": 2,
+      "youtube_id": "EeHySGoiKuc",
+      "title": "【英傑大戦】鉄の心",
+      "channel_id": null,
+      "published_at": null
+    },
+    {
+      "id": 3,
+      "youtube_id": "Xlb5uTKUbS0",
+      "title": "【英傑大戦】辛いときこそ荒らせ！！",
+      "channel_id": null,
+      "published_at": null
+    }
+  ],
+  "battles": [
+    {
+      "id": 1,
+      "video_id": 1,
+      "frame_timestamp": 146.0,
+      "result": "勝利",
+      "frame_image": "frames/1_146.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "池禅尼",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "小早川隆景",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "ER"
+        },
+        {
+          "name": "久坂玄瑞",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "諸角虎定",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "N"
+        },
+        {
+          "name": "大江広元",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "video_id": 1,
+      "frame_timestamp": 786.0,
+      "result": "勝利",
+      "frame_image": "frames/1_786.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "モルゴース",
+          "cost": 1.0,
+          "faction": "黄",
+          "rarity": "SR"
+        },
+        {
+          "name": "モルドレッド",
+          "cost": 2.0,
+          "faction": "黄",
+          "rarity": "SR"
+        },
+        {
+          "name": "張宝",
+          "cost": 1.5,
+          "faction": "黄",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "video_id": 1,
+      "frame_timestamp": 1468.0,
+      "result": "勝利",
+      "frame_image": "frames/1_1468.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "チンギス・ハン",
+          "cost": 3.5,
+          "faction": "蒼",
+          "rarity": "ER"
+        },
+        {
+          "name": "山内容堂",
+          "cost": 2.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "ランスロット",
+          "cost": 3.5,
+          "faction": "蒼",
+          "rarity": "ER"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "video_id": 1,
+      "frame_timestamp": 2138.0,
+      "result": "勝利",
+      "frame_image": "frames/1_2138.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "李儒",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "R"
+        },
+        {
+          "name": "朝倉景健",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "R"
+        },
+        {
+          "name": "張任",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "video_id": 1,
+      "frame_timestamp": 2804.0,
+      "result": "勝利",
+      "frame_image": "frames/1_2804.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "曹安民",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "N"
+        },
+        {
+          "name": "霧隠才蔵",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "恭雲院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "太田市之進",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "video_id": 1,
+      "frame_timestamp": 3414.0,
+      "result": "勝利",
+      "frame_image": "frames/1_3414.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "藤原保昌",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "R"
+        },
+        {
+          "name": "北条政子",
+          "cost": 1.5,
+          "faction": "蒼",
+          "rarity": "ER"
+        },
+        {
+          "name": "佐原義連",
+          "cost": 1.5,
+          "faction": "蒼",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "video_id": 1,
+      "frame_timestamp": 4062.0,
+      "result": "勝利",
+      "frame_image": "frames/1_4062.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "巴御前",
+          "cost": 2.0,
+          "faction": "碧",
+          "rarity": "ER"
+        },
+        {
+          "name": "甲斐姫",
+          "cost": 2.0,
+          "faction": "碧",
+          "rarity": "ER"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "video_id": 1,
+      "frame_timestamp": 4706.0,
+      "result": "勝利",
+      "frame_image": "frames/1_4706.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "張任",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "R"
+        },
+        {
+          "name": "朝倉景健",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "R"
+        },
+        {
+          "name": "饗庭氏直",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "video_id": 1,
+      "frame_timestamp": 5128.0,
+      "result": "勝利",
+      "frame_image": "frames/1_5128.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "美福門院",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "SR"
+        },
+        {
+          "name": "果心居士",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "video_id": 1,
+      "frame_timestamp": 5754.0,
+      "result": "勝利",
+      "frame_image": "frames/1_5754.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "李儒",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "R"
+        },
+        {
+          "name": "鍾会",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "王異",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "ER"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "video_id": 1,
+      "frame_timestamp": 6344.0,
+      "result": "勝利",
+      "frame_image": "frames/1_6344.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "土佐坊昌俊",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "斎藤道三",
+          "cost": 3.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "小見の方",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "太田市之進",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "曹安民",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "N"
+        },
+        {
+          "name": "恭雲院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "霧隠才蔵",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "video_id": 6,
+      "frame_timestamp": 388.0,
+      "result": "勝利",
+      "frame_image": "frames/6_388.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "恭雲院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "吉川広家",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "ブランシュ",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "フランソワ１世",
+          "cost": 2.5,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "リチャード１世",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "ER"
+        },
+        {
+          "name": "マセンシア",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "video_id": 6,
+      "frame_timestamp": 944.0,
+      "result": "勝利",
+      "frame_image": "frames/6_944.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "吉川広家",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "恭雲院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "ブランシュ",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "マセンシア",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "無二",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "SR"
+        },
+        {
+          "name": "武田信虎",
+          "cost": 3.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "video_id": 6,
+      "frame_timestamp": 1676.0,
+      "result": "勝利",
+      "frame_image": "frames/6_1676.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "吉川広家",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "ブランシュ",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "ヒルデガルト",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "SR"
+        },
+        {
+          "name": "饗庭氏直",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        },
+        {
+          "name": "張任",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "video_id": 6,
+      "frame_timestamp": 2952.0,
+      "result": "勝利",
+      "frame_image": "frames/6_2952.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "恭雲院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "吉川広家",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "ブランシュ",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "お船",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "video_id": 6,
+      "frame_timestamp": 3740.0,
+      "result": "勝利",
+      "frame_image": "frames/6_3740.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "吉川広家",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "ブランシュ",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "恭雲院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "池田せん",
+          "cost": 2.0,
+          "faction": "蒼",
+          "rarity": "ER"
+        },
+        {
+          "name": "呂蒙子明",
+          "cost": 1.5,
+          "faction": "蒼",
+          "rarity": "SR"
+        },
+        {
+          "name": "サンドリヨン",
+          "cost": 2.5,
+          "faction": "蒼",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "video_id": 6,
+      "frame_timestamp": 4432.0,
+      "result": "勝利",
+      "frame_image": "frames/6_4432.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "吉川広家",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "ブランシュ",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "恭雲院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "おまさの方",
+          "cost": 1.0,
+          "faction": "碧",
+          "rarity": "N"
+        },
+        {
+          "name": "佐久間象山",
+          "cost": 2.0,
+          "faction": "碧",
+          "rarity": "N"
+        },
+        {
+          "name": "土方歳三",
+          "cost": 3.0,
+          "faction": "碧",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "video_id": 6,
+      "frame_timestamp": 5120.0,
+      "result": "勝利",
+      "frame_image": "frames/6_5120.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "柳生宗矩",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "魔天ルシファー",
+          "cost": 2.5,
+          "faction": "紫",
+          "rarity": "SR"
+        },
+        {
+          "name": "鬼神のお松",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "video_id": 6,
+      "frame_timestamp": 6700.0,
+      "result": "勝利",
+      "frame_image": "frames/6_6700.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "柳生宗矩",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "鬼蝮 ユリア",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "黄月英",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "諏訪姫",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "video_id": 6,
+      "frame_timestamp": 7394.0,
+      "result": "勝利",
+      "frame_image": "frames/6_7394.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "柳生宗矩",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "諏訪姫",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "黄月英",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "アリエノール",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "大江広元",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "ラモラック",
+          "cost": 2.0,
+          "faction": "黄",
+          "rarity": "SR"
+        },
+        {
+          "name": "ベディヴィア",
+          "cost": 1.5,
+          "faction": "黄",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "video_id": 6,
+      "frame_timestamp": 8186.0,
+      "result": "勝利",
+      "frame_image": "frames/6_8186.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "柳生宗矩",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "黄月英",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "おまさの方",
+          "cost": 1.0,
+          "faction": "碧",
+          "rarity": "N"
+        },
+        {
+          "name": "巴御前",
+          "cost": 2.0,
+          "faction": "碧",
+          "rarity": "ER"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "video_id": 6,
+      "frame_timestamp": 8950.0,
+      "result": "勝利",
+      "frame_image": "frames/6_8950.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "山本八重",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "ER"
+        },
+        {
+          "name": "雪窓夫人",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "藤堂平助",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "勝海舟",
+          "cost": 2.0,
+          "faction": "碧",
+          "rarity": "SR"
+        },
+        {
+          "name": "関羽",
+          "cost": 3.0,
+          "faction": "碧",
+          "rarity": "ER"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "video_id": 6,
+      "frame_timestamp": 9572.0,
+      "result": "勝利",
+      "frame_image": "frames/6_9572.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "山本八重",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "ER"
+        },
+        {
+          "name": "雪窓夫人",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "藤堂平助",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "アーネスト・サトウ",
+          "cost": 2.0,
+          "faction": "黄",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "video_id": 6,
+      "frame_timestamp": 10346.0,
+      "result": "勝利",
+      "frame_image": "frames/6_10346.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "山本八重",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "ER"
+        },
+        {
+          "name": "雪窓夫人",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "小松帯刀",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "船田義昌",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "video_id": 6,
+      "frame_timestamp": 11190.0,
+      "result": "勝利",
+      "frame_image": "frames/6_11190.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "山本八重",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "ER"
+        },
+        {
+          "name": "雪窓夫人",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "亀寿姫",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "藤堂平助",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "お船",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "SR"
+        },
+        {
+          "name": "マセンシア",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "武田信虎",
+          "cost": 3.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "安田長秀",
+          "cost": 1.0,
+          "faction": "玄",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "video_id": 5,
+      "frame_timestamp": 164.0,
+      "result": "勝利",
+      "frame_image": "frames/5_164.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "土岐頼遠",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "SR"
+        },
+        {
+          "name": "皇甫嵩",
+          "cost": 2.5,
+          "faction": "紫",
+          "rarity": "R"
+        },
+        {
+          "name": "共叔段",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        }
+      ],
+      "player2": [
+        {
+          "name": "賈南風",
+          "cost": 1.5,
+          "faction": "琥",
+          "rarity": "ER"
+        },
+        {
+          "name": "九天",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "ER"
+        },
+        {
+          "name": "堀秀政",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "小りん",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "video_id": 5,
+      "frame_timestamp": 646.0,
+      "result": "勝利",
+      "frame_image": "frames/5_646.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "共叔段",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        }
+      ],
+      "player2": [
+        {
+          "name": "松原忠司",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "伊東甲子太郎",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "SR"
+        },
+        {
+          "name": "原田左之助",
+          "cost": 2.0,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "巻町操",
+          "cost": 1.0,
+          "faction": "碧",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "video_id": 5,
+      "frame_timestamp": 1252.0,
+      "result": "勝利",
+      "frame_image": "frames/5_1252.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "足利尊氏",
+          "cost": 3.5,
+          "faction": "紫",
+          "rarity": "ER"
+        },
+        {
+          "name": "共叔段",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        }
+      ],
+      "player2": []
+    },
+    {
+      "id": 80,
+      "video_id": 5,
+      "frame_timestamp": 2008.0,
+      "result": "勝利",
+      "frame_image": "frames/5_2008.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "土岐頼遠",
+          "cost": 2.0,
+          "faction": "紫",
+          "rarity": "SR"
+        },
+        {
+          "name": "足利尊氏",
+          "cost": 3.5,
+          "faction": "紫",
+          "rarity": "ER"
+        },
+        {
+          "name": "共叔段",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        },
+        {
+          "name": "皇甫嵩",
+          "cost": 2.5,
+          "faction": "紫",
+          "rarity": "R"
+        }
+      ],
+      "player2": [
+        {
+          "name": "山本八重",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "ER"
+        },
+        {
+          "name": "千種忠顕",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "亀寿姫",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "藤堂平助",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "雪窓夫人",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "video_id": 5,
+      "frame_timestamp": 2360.0,
+      "result": "勝利",
+      "frame_image": "frames/5_2360.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "共叔段",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        }
+      ],
+      "player2": [
+        {
+          "name": "アーネスト・サトウ",
+          "cost": 2.0,
+          "faction": "黄",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "video_id": 5,
+      "frame_timestamp": 3042.0,
+      "result": "勝利",
+      "frame_image": "frames/5_3042.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "共叔段",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        }
+      ],
+      "player2": [
+        {
+          "name": "王桃",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "ER"
+        },
+        {
+          "name": "ブリュネ",
+          "cost": 3.0,
+          "faction": "碧",
+          "rarity": "SR"
+        },
+        {
+          "name": "根井行親",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "video_id": 5,
+      "frame_timestamp": 3666.0,
+      "result": "勝利",
+      "frame_image": "frames/5_3666.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "共叔段",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        }
+      ],
+      "player2": [
+        {
+          "name": "池田せん",
+          "cost": 2.0,
+          "faction": "蒼",
+          "rarity": "ER"
+        },
+        {
+          "name": "前田慶次",
+          "cost": 3.5,
+          "faction": "蒼",
+          "rarity": "SR"
+        },
+        {
+          "name": "周姫",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "SR"
+        },
+        {
+          "name": "北条時行",
+          "cost": 1.5,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "近藤長次郎",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "video_id": 5,
+      "frame_timestamp": 4182.0,
+      "result": "勝利",
+      "frame_image": "frames/5_4182.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "共叔段",
+          "cost": 1.5,
+          "faction": "紫",
+          "rarity": "N"
+        }
+      ],
+      "player2": [
+        {
+          "name": "尼子経久",
+          "cost": 3.0,
+          "faction": "玄",
+          "rarity": "R"
+        },
+        {
+          "name": "新宮行家",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "video_id": 4,
+      "frame_timestamp": 452.0,
+      "result": "勝利",
+      "frame_image": "frames/4_452.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "祝融",
+          "cost": 2.0,
+          "faction": "黄",
+          "rarity": "ER"
+        },
+        {
+          "name": "龍造寺隆信",
+          "cost": 2.5,
+          "faction": "黄",
+          "rarity": "SR"
+        },
+        {
+          "name": "上瀧信重",
+          "cost": 1.5,
+          "faction": "黄",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "video_id": 4,
+      "frame_timestamp": 1122.0,
+      "result": "勝利",
+      "frame_image": "frames/4_1122.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "徳川斉昭",
+          "cost": 2.0,
+          "faction": "玄",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "video_id": 4,
+      "frame_timestamp": 1864.0,
+      "result": "勝利",
+      "frame_image": "frames/4_1864.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "上杉憲房",
+          "cost": 2.0,
+          "faction": "玄",
+          "rarity": "R"
+        },
+        {
+          "name": "三善康信",
+          "cost": 2.0,
+          "faction": "玄",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "video_id": 4,
+      "frame_timestamp": 2542.0,
+      "result": "勝利",
+      "frame_image": "frames/4_2542.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "武田勝頼",
+          "cost": 3.0,
+          "faction": "緋",
+          "rarity": "ER"
+        },
+        {
+          "name": "駒井政五郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "尾形百之助",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "杉文",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "N"
+        },
+        {
+          "name": "張華",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "video_id": 4,
+      "frame_timestamp": 3218.0,
+      "result": "勝利",
+      "frame_image": "frames/4_3218.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "伊達政宗",
+          "cost": 2.5,
+          "faction": "玄",
+          "rarity": "ER"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "video_id": 4,
+      "frame_timestamp": 3930.0,
+      "result": "勝利",
+      "frame_image": "frames/4_3930.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "新宮行家",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "N"
+        },
+        {
+          "name": "尼子経久",
+          "cost": 3.0,
+          "faction": "玄",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "video_id": 4,
+      "frame_timestamp": 4608.0,
+      "result": "勝利",
+      "frame_image": "frames/4_4608.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "小西行長",
+          "cost": 1.5,
+          "faction": "琥",
+          "rarity": "N"
+        },
+        {
+          "name": "西郷隆盛",
+          "cost": 3.0,
+          "faction": "琥",
+          "rarity": "ER"
+        },
+        {
+          "name": "堀秀政",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "R"
+        },
+        {
+          "name": "王元姫",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "video_id": 4,
+      "frame_timestamp": 5064.0,
+      "result": "勝利",
+      "frame_image": "frames/4_5064.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "土橋守重",
+          "cost": 2.5,
+          "faction": "玄",
+          "rarity": "R"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "video_id": 4,
+      "frame_timestamp": 5762.0,
+      "result": "勝利",
+      "frame_image": "frames/4_5762.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "ブリュネ",
+          "cost": 3.0,
+          "faction": "碧",
+          "rarity": "SR"
+        },
+        {
+          "name": "根井行親",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "N"
+        },
+        {
+          "name": "松平信綱",
+          "cost": 2.0,
+          "faction": "碧",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "video_id": 4,
+      "frame_timestamp": 6444.0,
+      "result": "勝利",
+      "frame_image": "frames/4_6444.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": []
+    },
+    {
+      "id": 95,
+      "video_id": 4,
+      "frame_timestamp": 7084.0,
+      "result": "勝利",
+      "frame_image": "frames/4_7084.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリップ６世",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "曹操",
+          "cost": 3.0,
+          "faction": "緋",
+          "rarity": "N"
+        },
+        {
+          "name": "片倉喜多",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "R"
+        },
+        {
+          "name": "伊達政宗",
+          "cost": 2.5,
+          "faction": "玄",
+          "rarity": "ER"
+        },
+        {
+          "name": "片倉小十郎",
+          "cost": 2.0,
+          "faction": "玄",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "video_id": 4,
+      "frame_timestamp": 7772.0,
+      "result": "勝利",
+      "frame_image": "frames/4_7772.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "ランスロット",
+          "cost": 3.5,
+          "faction": "蒼",
+          "rarity": "ER"
+        },
+        {
+          "name": "山内一豊",
+          "cost": 1.5,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "まつ",
+          "cost": 1.0,
+          "faction": "蒼",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "video_id": 4,
+      "frame_timestamp": 8446.0,
+      "result": "勝利",
+      "frame_image": "frames/4_8446.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "松原忠司",
+          "cost": 1.5,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "伊東甲子太郎",
+          "cost": 2.5,
+          "faction": "碧",
+          "rarity": "SR"
+        },
+        {
+          "name": "原田左之助",
+          "cost": 2.0,
+          "faction": "碧",
+          "rarity": "R"
+        },
+        {
+          "name": "巻町操",
+          "cost": 1.0,
+          "faction": "碧",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "video_id": 4,
+      "frame_timestamp": 8998.0,
+      "result": "勝利",
+      "frame_image": "frames/4_8998.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "フィリッパ",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山本勘助",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "佐野万次郎",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "貢姫",
+          "cost": 1.5,
+          "faction": "黄",
+          "rarity": "R"
+        },
+        {
+          "name": "奈多夫人",
+          "cost": 2.0,
+          "faction": "黄",
+          "rarity": "R"
+        }
+      ]
+    }
+  ]
+}
