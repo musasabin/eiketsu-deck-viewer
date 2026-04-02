@@ -13,17 +13,17 @@
     .nav-brand { color: #c8a84e; font-size: 1.2rem; font-weight: bold; text-decoration: none; cursor: pointer; }
 
     .container { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
-    h1 { color: #c8a84e; margin-bottom: 1rem; }
+    h1 { color: #c8a84e; margin-bottom: 0; }
     a { color: #5b9bd5; }
 
-    /* Stats */
-    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
-    .stat-card { background: #1a2a3a; border-radius: 8px; padding: 1rem; text-align: center; border: 1px solid #2a3a4a; }
-    .stat-value { font-size: 2rem; font-weight: bold; color: #c8a84e; }
-    .stat-label { color: #789; font-size: 0.85rem; }
-
-    /* Badges */
-    .badge { padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; }
+    /* List header */
+    .list-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem; }
+    .list-controls { display: flex; gap: 8px; flex-wrap: wrap; }
+    .list-controls select {
+      padding: 5px 8px; background: #1a2a3a; color: #e0e0e0;
+      border: 1px solid #2a3a4a; border-radius: 4px; font-size: 0.85rem; cursor: pointer;
+    }
+    .list-controls select:hover { border-color: #c8a84e; }
 
     /* Video grid */
     .video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
@@ -128,8 +128,23 @@
 <div class="container">
   <!-- Video list view -->
   <div id="view-list">
-    <h1>配信一覧</h1>
-    <div class="stats-grid" id="stats"></div>
+    <div class="list-header">
+      <h1>配信一覧</h1>
+      <div class="list-controls">
+        <select id="filterChannel"><option value="">全チャンネル</option></select>
+        <select id="filterResult">
+          <option value="">全結果</option>
+          <option value="勝利">勝利あり</option>
+          <option value="敗北">敗北あり</option>
+        </select>
+        <select id="sortOrder">
+          <option value="newest">新しい順</option>
+          <option value="oldest">古い順</option>
+          <option value="battles_desc">試合数が多い順</option>
+          <option value="battles_asc">試合数が少ない順</option>
+        </select>
+      </div>
+    </div>
     <div class="video-grid" id="videoGrid"></div>
   </div>
 
@@ -151,13 +166,23 @@
     try {
       const res = await fetch('./data/battles.json');
       allData = await res.json();
-      renderStats();
+      buildChannelFilter();
       renderVideoGrid();
       // 初期ルーティング（直リンク対応）
       route();
     } catch (e) {
       document.getElementById('videoGrid').innerHTML = '<div class="empty">データの読み込みに失敗しました</div>';
     }
+  }
+
+  function buildChannelFilter() {
+    const sel = document.getElementById('filterChannel');
+    allData.channels.forEach(ch => {
+      const opt = document.createElement('option');
+      opt.value = ch.id;
+      opt.textContent = ch.name;
+      sel.appendChild(opt);
+    });
   }
 
   // ハッシュルーティング
@@ -196,23 +221,36 @@
     return isoStr.slice(0, 10).replace(/-/g, '/');
   }
 
-  function renderStats() {
-    const totalBattles = allData.battles.length;
-    const wins = allData.battles.filter(b => b.result === '勝利').length;
-    const losses = allData.battles.filter(b => b.result === '敗北').length;
-    document.getElementById('stats').innerHTML = `
-      <div class="stat-card"><div class="stat-value">${allData.videos.length}</div><div class="stat-label">配信数</div></div>
-      <div class="stat-card"><div class="stat-value">${totalBattles}</div><div class="stat-label">総バトル数</div></div>
-      <div class="stat-card"><div class="stat-value">${wins}</div><div class="stat-label">勝利</div></div>
-      <div class="stat-card"><div class="stat-value">${losses}</div><div class="stat-label">敗北</div></div>
-    `;
-  }
-
   function renderVideoGrid() {
-    // Sort videos newest first
-    const sorted = [...allData.videos].sort((a, b) => {
-      return (b.published_at || '').localeCompare(a.published_at || '');
+    const chFilter   = document.getElementById('filterChannel').value;
+    const resFilter  = document.getElementById('filterResult').value;
+    const sortOrder  = document.getElementById('sortOrder').value;
+
+    let videos = [...allData.videos];
+
+    // チャンネル絞り込み
+    if (chFilter) videos = videos.filter(v => String(v.channel_id) === String(chFilter));
+
+    // 勝敗絞り込み
+    if (resFilter) {
+      videos = videos.filter(v => {
+        const battles = getBattlesForVideo(v.id);
+        return battles.some(b => b.result === resFilter);
+      });
+    }
+
+    // ソート
+    videos.sort((a, b) => {
+      if (sortOrder === 'newest') return (b.published_at || '').localeCompare(a.published_at || '');
+      if (sortOrder === 'oldest') return (a.published_at || '').localeCompare(b.published_at || '');
+      const ac = getBattlesForVideo(a.id).length;
+      const bc = getBattlesForVideo(b.id).length;
+      if (sortOrder === 'battles_desc') return bc - ac;
+      if (sortOrder === 'battles_asc')  return ac - bc;
+      return 0;
     });
+
+    const sorted = videos;
 
     const grid = document.getElementById('videoGrid');
     if (sorted.length === 0) {
@@ -331,6 +369,10 @@
     document.getElementById('view-list').style.display = 'block';
     window.scrollTo(0, 0);
   }
+
+  ['filterChannel', 'filterResult', 'sortOrder'].forEach(id => {
+    document.getElementById(id).addEventListener('change', renderVideoGrid);
+  });
 
   loadData();
 </script>
