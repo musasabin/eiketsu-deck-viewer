@@ -122,7 +122,7 @@
 <body>
 
 <nav class="navbar">
-  <span class="nav-brand" onclick="showVideoList()">英傑大戦 デッキビューア</span>
+  <a class="nav-brand" href="#">英傑大戦 デッキビューア</a>
 </nav>
 
 <div class="container">
@@ -136,7 +136,7 @@
   <!-- Video detail view -->
   <div id="view-detail" style="display:none;">
     <div class="page-header">
-      <div class="breadcrumb"><a onclick="showVideoList()">配信一覧</a> &rsaquo; <span id="detail-channel"></span></div>
+      <div class="breadcrumb"><a href="#">配信一覧</a> &rsaquo; <span id="detail-channel"></span></div>
       <h1 id="detail-title"></h1>
       <div class="video-stats" id="detail-stats"></div>
     </div>
@@ -153,10 +153,25 @@
       allData = await res.json();
       renderStats();
       renderVideoGrid();
+      // 初期ルーティング（直リンク対応）
+      route();
     } catch (e) {
       document.getElementById('videoGrid').innerHTML = '<div class="empty">データの読み込みに失敗しました</div>';
     }
   }
+
+  // ハッシュルーティング
+  function route() {
+    const hash = location.hash; // e.g. "#video/fhqGJK2-apk"
+    if (hash.startsWith('#video/')) {
+      const youtubeId = hash.slice('#video/'.length);
+      const video = allData.videos.find(v => v.youtube_id === youtubeId);
+      if (video) { renderDetail(video); return; }
+    }
+    renderList();
+  }
+
+  window.addEventListener('hashchange', route);
 
   function getChannel(channelId) {
     return allData.channels.find(c => c.id === channelId) || {};
@@ -220,7 +235,7 @@
         : `<span class="vc-no-battles">試合データなし</span>`;
 
       return `
-        <div class="video-card" onclick="showVideoDetail(${v.id})">
+        <a class="video-card" href="#video/${v.youtube_id}">
           <div class="vc-thumb">
             <img src="${thumb}" alt="" loading="lazy" onerror="this.style.display='none'">
           </div>
@@ -232,7 +247,7 @@
               ${v.published_at ? `<span class="vc-date">${fmtDate(v.published_at)}</span>` : ''}
             </div>
           </div>
-        </div>
+        </a>
       `;
     }).join('');
   }
@@ -243,11 +258,8 @@
     return `<span class="card-tag ${factionClass}">${c.name}${cost}</span>`;
   }
 
-  function showVideoDetail(videoId) {
-    const video = allData.videos.find(v => v.id === videoId);
-    if (!video) return;
-
-    const battles = getBattlesForVideo(videoId);
+  function renderDetail(video) {
+    const battles = getBattlesForVideo(video.id);
     const channel = getChannel(video.channel_id);
     const wins = battles.filter(b => b.result === '勝利').length;
     const losses = battles.filter(b => b.result === '敗北').length;
@@ -314,7 +326,7 @@
     window.scrollTo(0, 0);
   }
 
-  function showVideoList() {
+  function renderList() {
     document.getElementById('view-detail').style.display = 'none';
     document.getElementById('view-list').style.display = 'block';
     window.scrollTo(0, 0);
