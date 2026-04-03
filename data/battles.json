@@ -225,6 +225,13 @@
       "title": "【英傑大戦】ドナドナ　エキドナ【レイソ＊】",
       "channel_id": 7,
       "published_at": null
+    },
+    {
+      "id": 46,
+      "youtube_id": "BztlyS1Wvh4",
+      "title": "【英傑大戦】『Re:ゼロから始める異世界生活』コラボも後半に突入！続いてはこちら３人！！【SRスバル,SRベアトリス,SRエキドナ】",
+      "channel_id": 8,
+      "published_at": null
     }
   ],
   "battles": [
@@ -8970,6 +8977,456 @@
         }
       ],
       "player2": []
+    },
+    {
+      "id": 196,
+      "video_id": 46,
+      "frame_timestamp": 144.0,
+      "result": "unknown",
+      "frame_image": "frames/46_144.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "山内一豊",
+          "cost": 1.5,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "スバル",
+          "cost": 1.5,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "大内義隆",
+          "cost": 1.0,
+          "faction": "玄",
+          "rarity": "N"
+        },
+        {
+          "name": "晋文公",
+          "cost": 2.5,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "三吉慎蔵",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "前田慶次",
+          "cost": 3.5,
+          "faction": "蒼",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "毋丘倹",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "video_id": 46,
+      "frame_timestamp": 328.0,
+      "result": "unknown",
+      "frame_image": "frames/46_328.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "大内義隆",
+          "cost": 1.0,
+          "faction": "玄",
+          "rarity": "N"
+        },
+        {
+          "name": "三吉慎蔵",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "R"
+        },
+        {
+          "name": "山内一豊",
+          "cost": 1.5,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "晋文公",
+          "cost": 2.5,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "スバル",
+          "cost": 1.5,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "前田慶次",
+          "cost": 3.5,
+          "faction": "蒼",
+          "rarity": "SR"
+        }
+      ],
+      "player2": []
+    },
+    {
+      "id": 198,
+      "video_id": 46,
+      "frame_timestamp": 552.0,
+      "result": "勝利",
+      "frame_image": "frames/46_552.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "上総広常",
+          "cost": 2.5,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "ベアトリス",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "千葉常胤",
+          "cost": 2.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "島津豊久",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "ラム",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "真田信幸",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "竹林院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "山内一豊",
+          "cost": 1.5,
+          "faction": "蒼",
+          "rarity": "N"
+        },
+        {
+          "name": "晋文公",
+          "cost": 2.5,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "大内義隆",
+          "cost": 1.0,
+          "faction": "玄",
+          "rarity": "N"
+        }
+      ],
+      "player2": [
+        {
+          "name": "文欽",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "N"
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "video_id": 46,
+      "frame_timestamp": 736.0,
+      "result": "unknown",
+      "frame_image": "frames/46_736.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "竹林院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "真田信幸",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "ラム",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "上総広常",
+          "cost": 2.5,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "島津豊久",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "ベアトリス",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "千葉常胤",
+          "cost": 2.0,
+          "faction": "蒼",
+          "rarity": "R"
+        }
+      ],
+      "player2": []
+    },
+    {
+      "id": 200,
+      "video_id": 46,
+      "frame_timestamp": 908.0,
+      "result": "unknown",
+      "frame_image": "frames/46_908.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "竹林院",
+          "cost": 1.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "上総広常",
+          "cost": 2.5,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "ベアトリス",
+          "cost": 1.0,
+          "faction": "琥",
+          "rarity": "SR"
+        },
+        {
+          "name": "真田信幸",
+          "cost": 2.5,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "千葉常胤",
+          "cost": 2.0,
+          "faction": "蒼",
+          "rarity": "R"
+        },
+        {
+          "name": "島津豊久",
+          "cost": 2.0,
+          "faction": "琥",
+          "rarity": "SR"
+        }
+      ],
+      "player2": []
+    },
+    {
+      "id": 201,
+      "video_id": 46,
+      "frame_timestamp": 1048.0,
+      "result": "勝利",
+      "frame_image": "frames/46_1048.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "源頼親",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "N"
+        },
+        {
+          "name": "古志十郎",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "N"
+        },
+        {
+          "name": "エキドナ",
+          "cost": 3.0,
+          "faction": "玄",
+          "rarity": "SR"
+        },
+        {
+          "name": "入江九一",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "N"
+        },
+        {
+          "name": "ラム",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "緋村剣心",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ],
+      "player2": [
+        {
+          "name": "久坂玄瑞",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "video_id": 46,
+      "frame_timestamp": 1226.0,
+      "result": "unknown",
+      "frame_image": "frames/46_1226.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "入江九一",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "N"
+        },
+        {
+          "name": "緋村剣心",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "エキドナ",
+          "cost": 3.0,
+          "faction": "玄",
+          "rarity": "SR"
+        },
+        {
+          "name": "源頼親",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "N"
+        },
+        {
+          "name": "ラム",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "古志十郎",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "N"
+        }
+      ],
+      "player2": []
+    },
+    {
+      "id": 203,
+      "video_id": 46,
+      "frame_timestamp": 1400.0,
+      "result": "unknown",
+      "frame_image": "frames/46_1400.jpg",
+      "time_remaining": null,
+      "p1_castle_pct": null,
+      "p2_castle_pct": null,
+      "player1": [
+        {
+          "name": "エキドナ",
+          "cost": 3.0,
+          "faction": "玄",
+          "rarity": "SR"
+        },
+        {
+          "name": "緋村剣心",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "入江九一",
+          "cost": 1.0,
+          "faction": "緋",
+          "rarity": "N"
+        },
+        {
+          "name": "古志十郎",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "N"
+        },
+        {
+          "name": "ラム",
+          "cost": 2.0,
+          "faction": "緋",
+          "rarity": "SR"
+        },
+        {
+          "name": "源頼親",
+          "cost": 1.5,
+          "faction": "玄",
+          "rarity": "N"
+        }
+      ],
+      "player2": [
+        {
+          "name": "源頼国",
+          "cost": 1.0,
+          "faction": "玄",
+          "rarity": "N"
+        }
+      ]
     }
   ]
 }
